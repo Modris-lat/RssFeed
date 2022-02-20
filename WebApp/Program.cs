@@ -1,10 +1,13 @@
-using WebApp.Services;
+using Core;
+using Core.Interfaces;
+using Core.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<RssService>();
+builder.Services.AddScoped<IRssService,RssService>();
+builder.Services.AddSingleton<IFeeds, Feeds>();
 
 var app = builder.Build();
 

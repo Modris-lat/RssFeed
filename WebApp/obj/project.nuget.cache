@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Z3zsJxmn3lRBtXPgAUiDaEYimBRR+5D+Ow5Cf5ggX3SclWCgFYFCjOxhhYMa7eUydFmgQTXHXet53QX4k4ePQ==",
+  "dgSpecHash": "aQ8eYlerPu71MfzBJumONYkg1Jbl52oTE+AxBbJ7DFSghX5R/qL4wK6+L5tKd4mP4Hs7CkI0Ak6ai/9lO+wsWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Modris\\Desktop\\IT\\RSSFeedReader\\WebApp\\WebApp.csproj",
+  "projectFilePath": "C:\\Users\\Modris\\Desktop\\IT\\RssFeed\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

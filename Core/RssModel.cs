@@ -1,4 +1,4 @@
-﻿namespace WebApp.Models
+﻿namespace Core
 {
     public class RssModel
     {

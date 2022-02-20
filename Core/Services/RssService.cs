@@ -1,9 +1,9 @@
-﻿using System.Xml.Linq;
-using WebApp.Models;
+﻿using Core.Interfaces;
+using System.Xml.Linq;
 
-namespace WebApp.Services
+namespace Core.Services
 {
-    public class RssService
+    public class RssService: IRssService
     {
         
         public IList<RssModel> Parse(string url)
@@ -16,10 +16,14 @@ namespace WebApp.Services
             {
                 XDocument doc = XDocument.Load(url);
                 // RSS/Channel/item
-                var entries = from item in doc.Root.Descendants().First(i => i.Name.LocalName == "channel").Elements().Where(i => i.Name.LocalName == "item")
+                var entries = from item in doc.Root
+                              .Descendants()
+                              .First(i => i.Name.LocalName == "channel")
+                              .Elements()
+                              .Where(i => i.Name.LocalName == "item")
                               select new RssModel
                               {
-                                  Description = item.Elements().First(i => i.Name.LocalName == "description").Value,
+                                  Description = item.Elements().First(i => i.Name.LocalName == "description").Value.Replace("&quot;","\""),
                                   Link = item.Elements().First(i => i.Name.LocalName == "link").Value,
                                   PublishDate = ParseDate(item.Elements().First(i => i.Name.LocalName == "pubDate").Value).ToString(),
                                   Title = item.Elements().First(i => i.Name.LocalName == "title").Value
@@ -40,6 +44,5 @@ namespace WebApp.Services
             else
                 return DateTime.MinValue;
         }
-
     }
 }

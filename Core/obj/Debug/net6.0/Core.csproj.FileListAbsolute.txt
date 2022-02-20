@@ -1,0 +1,12 @@
+C:\Users\Modris\Desktop\IT\RssFeed\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache
+C:\Users\Modris\Desktop\IT\RssFeed\Core\obj\Debug\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Modris\Desktop\IT\RssFeed\Core\obj\Debug\net6.0\Core.AssemblyInfoInputs.cache
+C:\Users\Modris\Desktop\IT\RssFeed\Core\obj\Debug\net6.0\Core.AssemblyInfo.cs
+C:\Users\Modris\Desktop\IT\RssFeed\Core\obj\Debug\net6.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Modris\Desktop\IT\RssFeed\Core\bin\Debug\net6.0\Core.deps.json
+C:\Users\Modris\Desktop\IT\RssFeed\Core\bin\Debug\net6.0\Core.dll
+C:\Users\Modris\Desktop\IT\RssFeed\Core\bin\Debug\net6.0\ref\Core.dll
+C:\Users\Modris\Desktop\IT\RssFeed\Core\bin\Debug\net6.0\Core.pdb
+C:\Users\Modris\Desktop\IT\RssFeed\Core\obj\Debug\net6.0\Core.dll
+C:\Users\Modris\Desktop\IT\RssFeed\Core\obj\Debug\net6.0\ref\Core.dll
+C:\Users\Modris\Desktop\IT\RssFeed\Core\obj\Debug\net6.0\Core.pdb

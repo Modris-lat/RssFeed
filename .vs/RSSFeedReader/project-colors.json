@@ -15,7 +15,12 @@
       "ProjectGuid": "dead39fe-2861-443d-bbcf-135a94b8fa7e",
       "DisplayName": "WebApp",
       "ColorIndex": 2
+    },
+    "83fefe85-2e32-47f6-a1e1-04bc3c7b9b26": {
+      "ProjectGuid": "83fefe85-2e32-47f6-a1e1-04bc3c7b9b26",
+      "DisplayName": "Core",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

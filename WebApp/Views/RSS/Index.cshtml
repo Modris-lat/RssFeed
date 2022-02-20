@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "RSS feed from delfi";
+}
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <br />
+                <form action="~/RSS/Index" method="post">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4>Enter any RSS feed to display</h4>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label>Select feed</label>
+                                <select name="txt_url" class="form-control">
+                                    <option value="https://www.delfi.lv/rss/?channel=delfi">Jaunākās ziņas</option>
+                                    <option value="https://www.delfi.lv/rss/?channel=bizness">Biznesa ziņas</option>
+                                    <option value="https://www.delfi.lv/rss/?channel=laikazinas">Laika ziņas</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="panel-footer">
+                            <button type="submit" class="btn btn-success">Display feed</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h4>Feed Details </h4>
+                    </div>
+
+                    <div class="panel-body">
+                        
+                        @if (ViewBag.RSS != null)
+                        {
+                            foreach (var item in ViewBag.RSS)
+                            {
+                            <div class="jobs-well">
+                                <h4>@item.Title></h4>
+                                <div class="cnt" style="overflow: hidden">@item.Description</div>
+
+                                <hr />
+                                <a href='@item.Link' target="_blank" class="btn btn-success"><i class="fa fa-check"></i>View Details</a>
+                            </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
